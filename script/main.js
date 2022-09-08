@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     console.log(hisoblagich(35));
     elForm.addEventListener('submit', (evt) => {
-        evt.preventDefault();
+        // evt.preventDefault();
         let result_car = hisoblagich(elFormInput.value);
         elFormInput.value = '';
 
