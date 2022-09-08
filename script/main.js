@@ -1,10 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let elForm = document.querySelector('.form');
-    let elFormInput = document.querySelector('.form__input');
-    let elResultFoot = document.querySelector('.result__foot');
-    let elResultBicycle = document.querySelector('.result__bicycle');
-    let elResultCar = document.querySelector('.result__car');
-    let elResultPlan = document.querySelector('.result__plan');
+    const elForm = document.querySelector('.form'),
+        elFormInput = document.querySelector('.form__input'),
+        elResultFoot = document.querySelector('.result__foot'),
+        elResultBicycle = document.querySelector('.result__bicycle'),
+        elResultCar = document.querySelector('.result__car'),
+        elResultPlan = document.querySelector('.result__plan');
 
     function hisoblagich(masofa) {
         let resultFoot = masofa / 3.6;
@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     }
-    console.log(hisoblagich(35));
+    
     elForm.addEventListener('submit', (evt) => {
-        // evt.preventDefault();
-        let result_car = hisoblagich(elFormInput.value);
+        evt.preventDefault();
+        hisoblagich(elFormInput.value);
         elFormInput.value = '';
 
 
