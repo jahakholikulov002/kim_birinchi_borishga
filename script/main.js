@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     elForm.addEventListener('submit', (evt) => {
         evt.preventDefault();
         let result_car = hisoblagich(elFormInput.value);
-        elForm.value = '';
+        elFormInput.value = '';
 
 
     })
